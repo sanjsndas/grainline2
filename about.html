@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About · Grainline House Notes — Interior Design & Architecture Journal</title>
+  <meta name="description" content="About Grainline House Notes: an independent editorial publication for design thinkers. Our mission, contributors, and editorial principles.">
+  <meta name="author" content="Grainline Editorial">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.grainline-house-notes.com/about.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="About · Grainline House Notes">
+  <meta property="og:description" content="Independent editorial on interior design, architecture, and the built environment. Meet the team and read our editorial principles.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.grainline-house-notes.com/about.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1200&auto=format&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Grainline House Notes",
+    "description": "Independent editorial on interior design, architecture, and the built environment.",
+    "url": "https://www.grainline-house-notes.com/about.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Grainline Editorial",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.grainline-house-notes.com/logo.svg"
+      }
+    }
+  }
+  </script>
+  <style>
+    /* ----- reset & base (same as homepage) ----- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1e1e1e;
+      --soft-ink: #2f2f2f;
+      --paper: #fcfaf7;
+      --paper-warm: #f6f3ef;
+      --border-light: #e2ddd7;
+      --border-medium: #cdc6be;
+      --accent: #9b7b5c;
+      --accent-soft: #d9cdc0;
+      --muted: #6b625a;
+      --font-serif: 'Georgia', 'Times New Roman', 'Palatino', serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1280px;
+      --reading-width: 720px;
+    }
+
+    body {
+      background-color: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-serif);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding: 0 1.5rem;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      background: transparent;
+    }
+
+    /* ----- typography ----- */
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+      color: var(--ink);
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      margin-bottom: 1.2rem;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin: 2.5rem 0 1rem;
+      border-bottom: 1px solid var(--border-light);
+      padding-bottom: 0.5rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin: 1.8rem 0 0.8rem;
+    }
+
+    p {
+      margin-bottom: 1.4rem;
+      font-size: 1.125rem;
+      color: var(--soft-ink);
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: none;
+      transition: color 0.2s, border-color 0.2s;
+      border-bottom: 1px solid transparent;
+    }
+
+    a:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    /* ----- header / nav ----- */
+    .site-header {
+      padding: 2rem 0 1rem;
+      border-bottom: 1px solid var(--border-light);
+      margin-bottom: 2.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-family: var(--font-serif);
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      border-bottom: none;
+      color: var(--ink);
+    }
+
+    .logo span {
+      font-weight: 300;
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+    }
+
+    .nav-links a {
+      border-bottom: none;
+      font-weight: 500;
+    }
+
+    .nav-links a.active {
+      color: var(--accent);
+      border-bottom: 1px solid var(--accent);
+    }
+
+    /* ----- layout: main + sidebar (same as homepage) ----- */
+    .layout-grid {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 3.5rem;
+      align-items: start;
+    }
+
+    /* ----- about content styles ----- */
+    .about-content {
+      max-width: var(--reading-width);
+    }
+
+    .about-content h1 {
+      font-size: 3rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.15;
+    }
+
+    .about-intro {
+      font-size: 1.3rem;
+      line-height: 1.6;
+      color: var(--soft-ink);
+      border-left: 4px solid var(--accent);
+      padding-left: 1.8rem;
+      margin-bottom: 2.5rem;
+      font-style: normal;
+    }
+
+    .about-content h2 {
+      margin-top: 2.2rem;
+      font-size: 1.9rem;
+    }
+
+    .about-content h3 {
+      margin-top: 1.8rem;
+      font-size: 1.35rem;
+      font-weight: 600;
+    }
+
+    .about-content p {
+      font-size: 1.125rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .about-content ul {
+      margin: 1.5rem 0 2rem 1.8rem;
+      font-size: 1.1rem;
+      color: var(--soft-ink);
+    }
+
+    .about-content li {
+      margin-bottom: 0.6rem;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      margin: 2rem 0 2.5rem;
+    }
+
+    .team-member {
+      border-top: 1px solid var(--border-light);
+      padding-top: 1.2rem;
+    }
+
+    .team-member h4 {
+      font-family: var(--font-sans);
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+      color: var(--ink);
+    }
+
+    .team-member .role {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent);
+      margin-bottom: 0.6rem;
+    }
+
+    .team-member p {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .author-note {
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      color: var(--muted);
+      padding: 1.2rem 1.5rem;
+      background: var(--paper-warm);
+      border-left: 4px solid var(--accent-soft);
+      margin: 2.5rem 0;
+    }
+
+    .author-note p {
+      font-size: 1rem;
+      margin-bottom: 0;
+      font-style: italic;
+    }
+
+    /* sidebar (identical to homepage) */
+    .sidebar {
+      font-family: var(--font-sans);
+    }
+
+    .sidebar-widget {
+      margin-bottom: 2.8rem;
+      padding-bottom: 1.8rem;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .sidebar-widget:last-child {
+      border-bottom: none;
+    }
+
+    .sidebar h4 {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1.2rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar li {
+      margin-bottom: 0.7rem;
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    .sidebar li a {
+      border-bottom: none;
+    }
+
+    /* footer */
+    .site-footer {
+      margin-top: 4rem;
+      padding: 2.5rem 0 1.5rem;
+      border-top: 1px solid var(--border-light);
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.8rem;
+    }
+
+    .footer-links a {
+      border-bottom: none;
+    }
+
+    /* responsive */
+    @media (max-width: 1000px) {
+      .layout-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        margin-top: 2rem;
+      }
+
+      h1 {
+        font-size: 2.6rem;
+      }
+
+      .about-content h1 {
+        font-size: 2.6rem;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .team-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 0 1rem;
+      }
+
+      .site-header {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .about-content h1 {
+        font-size: 2.2rem;
+      }
+
+      .about-intro {
+        font-size: 1.1rem;
+        padding-left: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- HEADER (same as homepage with About active) -->
+    <header class="site-header">
+      <a href="index.html" class="logo">GRAINLINE <span>· House Notes</span></a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="terms.html">Terms Of Privacy</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookies Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="categories.html">Categories</a></li>
+      </nav>
+    </header>
+
+    <!-- MAIN LAYOUT: about page content + sidebar -->
+    <div class="layout-grid">
+      <!-- PRIMARY COLUMN: About content -->
+      <main class="about-content">
+        <h1>About Grainline</h1>
+        
+        <p class="about-intro">
+          We are an independent editorial publication for design thinkers — architects, interior designers, 
+          and anyone who believes the built environment shapes how we live, feel, and connect.
+        </p>
+
+        <p>
+          Founded in 2021, <strong>Grainline · House Notes</strong> began as a small newsletter shared among 
+          a handful of architects and craftspeople. It was a response to what we saw as a gap: design 
+          journalism that was either too shallow (trend roundups, clickbait galleries) or too academic 
+          (dense theory with little practical application). We wanted something in between — thoughtful, 
+          deeply researched, but always grounded in the realities of building and living.
+        </p>
+
+        <p>
+          Today, Grainline reaches over 85,000 readers each month. We remain proudly independent and 
+          reader-supported. We do not accept sponsored content, and we do not allow advertisers to influence 
+          our editorial decisions. Every article we publish is written by someone who has spent time in the 
+          field — measuring, sketching, or making.
+        </p>
+
+        <h2>Our Editorial Principles</h2>
+        <ul>
+          <li><strong>Depth over speed.</strong> We take time to report, test, and fact-check. If a topic 
+          deserves 3,000 words, we’ll write 3,000 words.</li>
+          <li><strong>Practical intelligence.</strong> Every essay or guide should leave you with something 
+          actionable — a dimension to remember, a material to consider, a question to ask.</li>
+          <li><strong>Critical perspective.</strong> We celebrate good design, but we also ask hard questions 
+          about sustainability, affordability, and who gets to participate in shaping our environments.</li>
+          <li><strong>Material honesty.</strong> We favor materials and methods that age gracefully, can be 
+          repaired, and tell the truth about what they are.</li>
+          <li><strong>No sponsored content.</strong> Ever. Our recommendations come from experience, not 
+          commission.</li>
+        </ul>
+
+        <h2>The Team</h2>
+        <p>
+          Grainline is produced by a small core editorial team and a wider circle of contributing architects, 
+          designers, historians, and craftspeople.
+        </p>
+
+        <div class="team-grid">
+          <div class="team-member">
+            <h4>Elias Ward</h4>
+            <div class="role">Editor-in-Chief</div>
+            <p>Elias is an architect and writer based in Copenhagen. He founded Grainline after a decade of 
+            residential practice. His work focuses on courtyard housing, passive design, and the intersection 
+            of craft and construction.</p>
+          </div>
+          <div class="team-member">
+            <h4>Clara Mendez</h4>
+            <div class="role">Senior Editor, Interiors</div>
+            <p>Clara is an interior designer and former materials librarian. She writes about textiles, 
+            color, and the sensory experience of rooms. Her book on layering light and texture is forthcoming.</p>
+          </div>
+          <div class="team-member">
+            <h4>Jonas Reed</h4>
+            <div class="role">Contributing Editor, Materials</div>
+            <p>Jonas is a plasterer and building conservator. He writes about traditional finishes, 
+            low-carbon materials, and the chemistry of building. He lives in a 19th-century lime-plastered 
+            farmhouse in Vermont.</p>
+          </div>
+          <div class="team-member">
+            <h4>Mira Singh</h4>
+            <div class="role">Contributing Editor, Lighting</div>
+            <p>Mira is a lighting designer with a background in theater. She writes about the poetics and 
+            practicalities of light in residential spaces, with a focus on human-centric and circadian design.</p>
+          </div>
+        </div>
+
+        <div class="author-note">
+          <p>
+            “We believe good design is not about trends — it’s about how a space makes you feel. 
+            Our goal is to give you the tools to think critically about your own environment.” 
+            — Elias Ward, Editor-in-Chief
+          </p>
+        </div>
+
+        <h2>How We Work</h2>
+        <p>
+          Every article begins with a question. Sometimes it’s practical (“What’s the ideal depth for a 
+          kitchen island?”), sometimes it’s philosophical (“Why do we crave patina in an age of 
+          scratch-resistant surfaces?”). We then research, interview, and — whenever possible — visit 
+          real projects. We photograph details, measure spaces, and talk to the people who live and work 
+          in the buildings we write about.
+        </p>
+        <p>
+          Our guides are tested. Our essays are edited for clarity, not jargon. And we always disclose 
+          when something is an opinion, a case study, or a report from the field. You can read more about 
+          our process on our <a href="contact.html">contact page</a>.
+        </p>
+
+        <h2>Independence & Funding</h2>
+        <p>
+          Grainline is funded entirely by reader subscriptions and one-time donations. We do not run 
+          display advertising, and we do not accept payment for coverage. This model allows us to write 
+          about what matters, not what sells. If you value independent design journalism, please consider 
+          <a href="#">supporting us</a>.
+        </p>
+
+        <h2>Contact & Submissions</h2>
+        <p>
+          We welcome pitches from writers, designers, and researchers. For general inquiries, email 
+          <a href="mailto:editor@grainline.house">editor@grainline.house</a>. For submissions, please 
+          review our <a href="#">submission guidelines</a>.
+        </p>
+        <p>
+          You can also find us on <a href="#">Instagram</a> and <a href="#">LinkedIn</a>. 
+          Our full privacy policy is <a href="privacy.html">here</a>, and our terms of use are 
+          <a href="terms.html">here</a>.
+        </p>
+      </main>
+
+      <!-- SIDEBAR (same as homepage, reused) -->
+      <aside class="sidebar" aria-label="Sidebar with useful content">
+        <!-- search widget -->
+        <div class="sidebar-widget">
+          <h4>Search</h4>
+          <div class="search-box" style="display: flex; border: 1px solid var(--border-medium); background: white;">
+            <input type="text" placeholder="Search articles…" aria-label="Search articles" style="border: none; padding: 0.7rem 1rem; font-family: var(--font-sans); font-size: 0.9rem; width: 100%; outline: none;">
+            <button aria-label="Submit search" style="background: transparent; border: none; padding: 0 1.2rem; font-family: var(--font-sans); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; cursor: pointer; border-left: 1px solid var(--border-light);">Go</button>
+          </div>
+        </div>
+
+        <!-- popular articles -->
+        <div class="sidebar-widget">
+          <h4>Popular This Month</h4>
+          <ul>
+            <li><a href="#">The 7 Most Common Kitchen Layout Mistakes</a></li>
+            <li><a href="#">How to Choose a White Paint (It’s Harder Than You Think)</a></li>
+            <li><a href="#">Small Bathroom, Big Ideas: 12 Space-Saving Tricks</a></li>
+            <li><a href="#">A Beginner’s Guide to Architectural Styles</a></li>
+            <li><a href="#">Why Your Living Room Needs Three Types of Light</a></li>
+          </ul>
+        </div>
+
+        <!-- latest articles -->
+        <div class="sidebar-widget">
+          <h4>Latest</h4>
+          <ul>
+            <li><a href="#">The Quiet Radicalism of Courtyard Houses</a></li>
+            <li><a href="#">Lime Plaster: The Breathing Wall</a></li>
+            <li><a href="#">Beyond the Pendant: Lighting Layers</a></li>
+            <li><a href="#">Living Large in 40 Square Meters</a></li>
+          </ul>
+        </div>
+
+        <!-- editor note -->
+        <div class="sidebar-widget">
+          <h4>From the Editor</h4>
+          <p style="font-size: 0.9rem; line-height: 1.5;">“We believe good design is not about trends—it’s about how a space makes you feel. Our goal is to give you the tools to think critically about your own environment.” — Elias Ward, Editor-in-Chief</p>
+        </div>
+
+        <!-- related categories -->
+        <div class="sidebar-widget">
+          <h4>Explore Topics</h4>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Space Planning</a></li>
+            <li><a href="#">Furniture</a></li>
+            <li><a href="#">Modern Homes</a></li>
+            <li><a href="#">Renovation</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div>© 2025 Grainline · House Notes. Independent editorial.</div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="cookies.html">Cookies</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

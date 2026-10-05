@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories · Grainline House Notes — Interior Design & Architecture Journal</title>
+  <meta name="description" content="Browse all categories from Grainline House Notes: interior design, architecture, materials, lighting, space planning, and more. Independent editorial.">
+  <meta name="author" content="Grainline Editorial">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.grainline-house-notes.com/categories.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Categories · Grainline House Notes">
+  <meta property="og:description" content="Explore our editorial categories: interior design, architecture, materials, lighting, and space planning.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.grainline-house-notes.com/categories.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1200&auto=format&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Categories — Grainline House Notes",
+    "description": "Browse all editorial categories from Grainline House Notes.",
+    "url": "https://www.grainline-house-notes.com/categories.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Grainline Editorial",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.grainline-house-notes.com/logo.svg"
+      }
+    }
+  }
+  </script>
+  <style>
+    /* ----- reset & base (same as homepage / about / terms) ----- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1e1e1e;
+      --soft-ink: #2f2f2f;
+      --paper: #fcfaf7;
+      --paper-warm: #f6f3ef;
+      --border-light: #e2ddd7;
+      --border-medium: #cdc6be;
+      --accent: #9b7b5c;
+      --accent-soft: #d9cdc0;
+      --muted: #6b625a;
+      --font-serif: 'Georgia', 'Times New Roman', 'Palatino', serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1280px;
+      --reading-width: 720px;
+    }
+
+    body {
+      background-color: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-serif);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding: 0 1.5rem;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      background: transparent;
+    }
+
+    /* ----- typography ----- */
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+      color: var(--ink);
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      margin-bottom: 1.2rem;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin: 2.5rem 0 1rem;
+      border-bottom: 1px solid var(--border-light);
+      padding-bottom: 0.5rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin: 1.8rem 0 0.8rem;
+    }
+
+    p {
+      margin-bottom: 1.4rem;
+      font-size: 1.125rem;
+      color: var(--soft-ink);
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: none;
+      transition: color 0.2s, border-color 0.2s;
+      border-bottom: 1px solid transparent;
+    }
+
+    a:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    /* ----- header / nav ----- */
+    .site-header {
+      padding: 2rem 0 1rem;
+      border-bottom: 1px solid var(--border-light);
+      margin-bottom: 2.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-family: var(--font-serif);
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      border-bottom: none;
+      color: var(--ink);
+    }
+
+    .logo span {
+      font-weight: 300;
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+    }
+
+    .nav-links a {
+      border-bottom: none;
+      font-weight: 500;
+    }
+
+    .nav-links a.active {
+      color: var(--accent);
+      border-bottom: 1px solid var(--accent);
+    }
+
+    /* ----- layout: main + sidebar (same as homepage) ----- */
+    .layout-grid {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 3.5rem;
+      align-items: start;
+    }
+
+    /* ----- categories page specific styles ----- */
+    .categories-content {
+      max-width: var(--reading-width);
+    }
+
+    .categories-intro {
+      font-size: 1.25rem;
+      line-height: 1.6;
+      color: var(--soft-ink);
+      border-left: 4px solid var(--accent);
+      padding-left: 1.8rem;
+      margin-bottom: 2.5rem;
+      font-style: normal;
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.8rem;
+      margin: 2.5rem 0 1rem;
+    }
+
+    .category-card {
+      background: var(--paper-warm);
+      border: 1px solid var(--border-light);
+      padding: 1.8rem 1.8rem 1.6rem;
+      border-radius: 2px;
+      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .category-card:hover {
+      border-color: var(--accent-soft);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.02);
+      transform: translateY(-2px);
+    }
+
+    .category-card h3 {
+      font-size: 1.6rem;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+    }
+
+    .category-card h3 a {
+      border-bottom: none;
+    }
+
+    .category-card h3 a:hover {
+      color: var(--accent);
+    }
+
+    .category-card p {
+      font-size: 0.98rem;
+      margin-bottom: 1.2rem;
+      color: var(--soft-ink);
+      line-height: 1.5;
+      flex: 1;
+    }
+
+    .category-meta {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid var(--border-light);
+      padding-top: 0.9rem;
+      margin-top: 0.4rem;
+    }
+
+    .category-meta span {
+      font-weight: 500;
+    }
+
+    .category-meta a {
+      border-bottom: none;
+      font-weight: 600;
+      color: var(--accent);
+      font-size: 0.75rem;
+    }
+
+    .category-meta a:hover {
+      color: var(--ink);
+    }
+
+    .all-categories-note {
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-top: 1.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--border-light);
+      text-align: center;
+    }
+
+    .all-categories-note a {
+      font-weight: 500;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .all-categories-note a:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    /* sidebar (identical to homepage) */
+    .sidebar {
+      font-family: var(--font-sans);
+    }
+
+    .sidebar-widget {
+      margin-bottom: 2.8rem;
+      padding-bottom: 1.8rem;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .sidebar-widget:last-child {
+      border-bottom: none;
+    }
+
+    .sidebar h4 {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1.2rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar li {
+      margin-bottom: 0.7rem;
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    .sidebar li a {
+      border-bottom: none;
+    }
+
+    /* footer */
+    .site-footer {
+      margin-top: 4rem;
+      padding: 2.5rem 0 1.5rem;
+      border-top: 1px solid var(--border-light);
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.8rem;
+    }
+
+    .footer-links a {
+      border-bottom: none;
+    }
+
+    /* responsive */
+    @media (max-width: 1000px) {
+      .layout-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        margin-top: 2rem;
+      }
+
+      h1 {
+        font-size: 2.6rem;
+      }
+
+      .category-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 0 1rem;
+      }
+
+      .site-header {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .categories-intro {
+        font-size: 1.1rem;
+        padding-left: 1.2rem;
+      }
+
+      .category-card {
+        padding: 1.4rem;
+      }
+
+      .category-card h3 {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- HEADER (same as homepage, active state for Categories) -->
+    <header class="site-header">
+      <a href="index.html" class="logo">GRAINLINE <span>· House Notes</span></a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="terms.html">Terms Of Privacy</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookies Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="categories.html" class="active">Categories</a></li>
+      </nav>
+    </header>
+
+    <!-- MAIN LAYOUT: categories content + sidebar -->
+    <div class="layout-grid">
+      <!-- PRIMARY COLUMN: Categories content -->
+      <main class="categories-content">
+        <h1>Categories</h1>
+
+        <p class="categories-intro">
+          Every article we publish falls into one of these editorial pillars. 
+          Browse by topic to find the ideas, guides, and critiques that matter to you.
+        </p>
+
+        <p>
+          Our categories are not just labels — they reflect the way we think about buildings and interiors: 
+          as a conversation between materials, light, proportion, and daily life. Whether you're renovating 
+          a single room or studying architectural history, you'll find something here.
+        </p>
+
+        <!-- CATEGORY GRID -->
+        <div class="category-grid">
+          <!-- Interior Design -->
+          <div class="category-card">
+            <h3><a href="#">Interior Design</a></h3>
+            <p>From colour theory to furniture layout — practical guidance and critical essays on making rooms that feel inevitable.</p>
+            <div class="category-meta">
+              <span>42 articles</span>
+              <a href="#">View →</a>
+            </div>
+          </div>
+
+          <!-- Architecture -->
+          <div class="category-card">
+            <h3><a href="#">Architecture</a></h3>
+            <p>Buildings, theory, and the built environment. We look at both iconic works and quiet, underappreciated structures.</p>
+            <div class="category-meta">
+              <span>38 articles</span>
+              <a href="#">View →</a>
+            </div>
+          </div>
+
+          <!-- Materials -->
+          <div class="category-card">
+            <h3><a href="#">Materials</a></h3>
+            <p>Lime plaster, reclaimed timber, stone, brass — how materials age, perform, and shape the character of a space.</p>
+            <div class="category-meta">
+              <span>27 articles</span>
+              <a href="#">View →</a>
+            </div>
+          </div>
+
+          <!-- Lighting -->
+          <div class="category-card">
+            <h3><a href="#">Lighting</a></h3>
+            <p>Layered light, fixtures, daylighting, and the invisible architecture of illumination. Good lighting is everything.</p>
+            <div class="category-meta">
+              <span>19 articles</span>
+              <a href="#">View →</a>
+            </div>
+          </div>
+
+          <!-- Space Planning -->
+          <div class="category-card">
+            <h3><a href="#">Space Planning</a></h3>
+            <p>Circulation, zoning, small-space strategies, and the geometry of living well within constraints.</p>
+            <div class="category-meta">
+              <span>24 articles</span>
+              <a href="#">View →</a>
+            </div>
+          </div>
+
+          <!-- Furniture -->
+          <div class="category-card">
+            <h3><a href="#">Furniture</a></h3>
+            <p>Iconic pieces, contemporary makers, and how to choose furniture that serves both function and feeling.</p>
+            <div class="category-meta">
+              <span>31 articles</span>
+              <a href="#">View →</a>
+            </div>
+          </div>
+
+          <!-- Modern Homes -->
+          <div class="category-card">
+            <h3><a href="#">Modern Homes</a></h3>
+            <p>Contemporary residential architecture and interiors — from urban infill to rural retreats.</p>
+            <div class="category-meta">
+              <span>22 articles</span>
+              <a href="#">View →</a>
+            </div>
+          </div>
+
+          <!-- Renovation -->
+          <div class="category-card">
+            <h3><a href="#">Renovation</a></h3>
+            <p>Before-and-afters, structural lessons, and the honest realities of updating older buildings.</p>
+            <div class="category-meta">
+              <span>18 articles</span>
+              <a href="#">View →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- additional note about all categories -->
+        <div class="all-categories-note">
+          Looking for something else? <a href="#">View all articles →</a> or use the search box in the sidebar.
+        </div>
+
+        <h2>How We Organise Our Content</h2>
+        <p>
+          We keep our taxonomy intentionally small. Instead of dozens of overlapping tags, we use eight core 
+          categories. This helps you browse with clarity and helps us maintain a coherent editorial focus. 
+          Many articles touch on more than one category — for example, a piece on lime plaster might appear 
+          under both <strong>Materials</strong> and <strong>Renovation</strong>. We always assign a primary 
+          category so you can find what you need.
+        </p>
+        <p>
+          If you have a suggestion for a topic we should cover, or if you're unsure where to start, 
+          <a href="contact.html">get in touch</a>. We're always happy to point you toward the right reading.
+        </p>
+      </main>
+
+      <!-- SIDEBAR (same as homepage, reused) -->
+      <aside class="sidebar" aria-label="Sidebar with useful content">
+        <!-- search widget -->
+        <div class="sidebar-widget">
+          <h4>Search</h4>
+          <div class="search-box" style="display: flex; border: 1px solid var(--border-medium); background: white;">
+            <input type="text" placeholder="Search articles…" aria-label="Search articles" style="border: none; padding: 0.7rem 1rem; font-family: var(--font-sans); font-size: 0.9rem; width: 100%; outline: none;">
+            <button aria-label="Submit search" style="background: transparent; border: none; padding: 0 1.2rem; font-family: var(--font-sans); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; cursor: pointer; border-left: 1px solid var(--border-light);">Go</button>
+          </div>
+        </div>
+
+        <!-- popular articles -->
+        <div class="sidebar-widget">
+          <h4>Popular This Month</h4>
+          <ul>
+            <li><a href="#">The 7 Most Common Kitchen Layout Mistakes</a></li>
+            <li><a href="#">How to Choose a White Paint (It’s Harder Than You Think)</a></li>
+            <li><a href="#">Small Bathroom, Big Ideas: 12 Space-Saving Tricks</a></li>
+            <li><a href="#">A Beginner’s Guide to Architectural Styles</a></li>
+            <li><a href="#">Why Your Living Room Needs Three Types of Light</a></li>
+          </ul>
+        </div>
+
+        <!-- latest articles -->
+        <div class="sidebar-widget">
+          <h4>Latest</h4>
+          <ul>
+            <li><a href="#">The Quiet Radicalism of Courtyard Houses</a></li>
+            <li><a href="#">Lime Plaster: The Breathing Wall</a></li>
+            <li><a href="#">Beyond the Pendant: Lighting Layers</a></li>
+            <li><a href="#">Living Large in 40 Square Meters</a></li>
+          </ul>
+        </div>
+
+        <!-- editor note -->
+        <div class="sidebar-widget">
+          <h4>From the Editor</h4>
+          <p style="font-size: 0.9rem; line-height: 1.5;">“We believe good design is not about trends—it’s about how a space makes you feel. Our goal is to give you the tools to think critically about your own environment.” — Elias Ward, Editor-in-Chief</p>
+        </div>
+
+        <!-- related categories (now with more links) -->
+        <div class="sidebar-widget">
+          <h4>Explore Topics</h4>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Space Planning</a></li>
+            <li><a href="#">Furniture</a></li>
+            <li><a href="#">Modern Homes</a></li>
+            <li><a href="#">Renovation</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div>© 2025 Grainline · House Notes. Independent editorial.</div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="cookies.html">Cookies</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

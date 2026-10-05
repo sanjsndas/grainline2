@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact · Grainline · House Notes</title>
+  <meta name="description" content="Get in touch with the editorial team at Grainline · House Notes. We welcome thoughtful questions, story tips, and feedback from our readers.">
+  <meta name="author" content="Grainline Editorial">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.grainline-house-notes.com/contact.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact · Grainline · House Notes">
+  <meta property="og:description" content="Reach the editorial team at Grainline. We read every message.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.grainline-house-notes.com/contact.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1200&auto=format&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Grainline · House Notes",
+    "url": "https://www.grainline-house-notes.com/contact.html",
+    "description": "Contact page for Grainline editorial."
+  }
+  </script>
+  <style>
+    /* ----- reset & base (identical to index) ----- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1e1e1e;
+      --soft-ink: #2f2f2f;
+      --paper: #fcfaf7;
+      --paper-warm: #f6f3ef;
+      --border-light: #e2ddd7;
+      --border-medium: #cdc6be;
+      --accent: #9b7b5c;
+      --accent-soft: #d9cdc0;
+      --muted: #6b625a;
+      --font-serif: 'Georgia', 'Times New Roman', 'Palatino', serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1280px;
+      --reading-width: 720px;
+    }
+
+    body {
+      background-color: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-serif);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding: 0 1.5rem;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      background: transparent;
+    }
+
+    /* ----- typography ----- */
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+      color: var(--ink);
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      margin-bottom: 1.2rem;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin: 2.5rem 0 1rem;
+      border-bottom: 1px solid var(--border-light);
+      padding-bottom: 0.5rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin: 1.8rem 0 0.8rem;
+    }
+
+    p {
+      margin-bottom: 1.4rem;
+      font-size: 1.125rem;
+      color: var(--soft-ink);
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: none;
+      transition: color 0.2s, border-color 0.2s;
+      border-bottom: 1px solid transparent;
+    }
+
+    a:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    /* ----- header / nav ----- */
+    .site-header {
+      padding: 2rem 0 1rem;
+      border-bottom: 1px solid var(--border-light);
+      margin-bottom: 2.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-family: var(--font-serif);
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      border-bottom: none;
+      color: var(--ink);
+    }
+
+    .logo span {
+      font-weight: 300;
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+    }
+
+    .nav-links a {
+      border-bottom: none;
+      font-weight: 500;
+    }
+
+    /* ----- layout: main + sidebar (same grid) ----- */
+    .layout-grid {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 3.5rem;
+      align-items: start;
+    }
+
+    /* ----- contact form styles ----- */
+    .contact-form {
+      max-width: 640px;
+      margin: 2rem 0 2.5rem;
+      background: var(--paper-warm);
+      padding: 2.5rem 2.5rem 2rem;
+      border: 1px solid var(--border-light);
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+      font-weight: 600;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 0.9rem 1rem;
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      border: 1px solid var(--border-medium);
+      background: white;
+      color: var(--ink);
+      outline: none;
+      transition: border-color 0.15s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: var(--accent);
+    }
+
+    .form-group textarea {
+      min-height: 160px;
+      resize: vertical;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+    }
+
+    .submit-btn {
+      background: var(--ink);
+      color: white;
+      border: none;
+      padding: 1rem 2.8rem;
+      font-family: var(--font-sans);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-top: 0.5rem;
+    }
+
+    .submit-btn:hover {
+      background: var(--accent);
+      color: white;
+    }
+
+    .contact-info {
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      background: var(--paper-warm);
+      padding: 1.5rem 2rem;
+      border-left: 4px solid var(--accent-soft);
+      margin: 2rem 0;
+    }
+
+    .contact-info p {
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+      font-family: var(--font-sans);
+    }
+
+    .contact-info strong {
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    /* ----- sidebar (shared with index) ----- */
+    .sidebar {
+      font-family: var(--font-sans);
+    }
+
+    .sidebar-widget {
+      margin-bottom: 2.8rem;
+      padding-bottom: 1.8rem;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .sidebar-widget:last-child {
+      border-bottom: none;
+    }
+
+    .sidebar h4 {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1.2rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar li {
+      margin-bottom: 0.7rem;
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    .sidebar li a {
+      border-bottom: none;
+    }
+
+    .search-box {
+      display: flex;
+      border: 1px solid var(--border-medium);
+      background: white;
+    }
+
+    .search-box input {
+      border: none;
+      padding: 0.7rem 1rem;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      width: 100%;
+      outline: none;
+    }
+
+    .search-box button {
+      background: transparent;
+      border: none;
+      padding: 0 1.2rem;
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+      border-left: 1px solid var(--border-light);
+    }
+
+    /* ----- newsletter (shared) ----- */
+    .newsletter {
+      background: var(--paper-warm);
+      padding: 2.5rem;
+      margin: 2.5rem 0;
+      border: 1px solid var(--border-light);
+      text-align: center;
+    }
+
+    .newsletter h3 {
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .newsletter p {
+      font-size: 1rem;
+      max-width: 500px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .newsletter-form {
+      display: flex;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .newsletter-form input {
+      flex: 1;
+      padding: 0.8rem 1rem;
+      border: 1px solid var(--border-medium);
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      outline: none;
+    }
+
+    .newsletter-form button {
+      background: var(--ink);
+      color: white;
+      border: none;
+      padding: 0 2rem;
+      font-family: var(--font-sans);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-size: 0.8rem;
+      cursor: pointer;
+    }
+
+    /* ----- footer (shared) ----- */
+    .site-footer {
+      margin-top: 4rem;
+      padding: 2.5rem 0 1.5rem;
+      border-top: 1px solid var(--border-light);
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.8rem;
+    }
+
+    .footer-links a {
+      border-bottom: none;
+    }
+
+    /* ----- responsive ----- */
+    @media (max-width: 1000px) {
+      .layout-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        margin-top: 2rem;
+      }
+
+      h1 {
+        font-size: 2.6rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 0 1rem;
+      }
+
+      .site-header {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .contact-form {
+        padding: 1.8rem;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      .newsletter {
+        padding: 1.8rem;
+      }
+
+      .newsletter-form {
+        flex-direction: column;
+      }
+
+      .newsletter-form button {
+        padding: 0.9rem 2rem;
+      }
+    }
+
+    /* hidden utility */
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- HEADER (consistent with index) -->
+    <header class="site-header">
+      <a href="index.html" class="logo">GRAINLINE <span>· House Notes</span></a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="terms.html">Terms Of Privacy</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookies Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="categories.html">Categories</a></li>
+      </nav>
+    </header>
+
+    <!-- MAIN LAYOUT: contact content + sidebar -->
+    <div class="layout-grid">
+      <!-- PRIMARY CONTENT COLUMN: contact page -->
+      <main>
+        <h1 style="font-size: 2.8rem; margin-bottom: 0.5rem;">Contact Us</h1>
+        <p style="font-size: 1.2rem; color: var(--muted); font-family: var(--font-sans); margin-bottom: 2rem;">We welcome thoughtful questions, story tips, and feedback from our readers.</p>
+
+        <div class="contact-info">
+          <p><strong>Editorial:</strong> <a href="mailto:editor@grainline.house">editor@grainline.house</a></p>
+          <p><strong>General inquiries:</strong> <a href="mailto:hello@grainline.house">hello@grainline.house</a></p>
+          <p><strong>Postal:</strong> 47 Wren Street, Studio 3B, Portland, OR 97209</p>
+          <p style="margin-top: 0.8rem; font-size: 0.9rem;"><em>We read every message. Response time is typically 2–3 business days.</em></p>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <div class="contact-form">
+          <h3 style="margin-top: 0; font-size: 1.4rem;">Send a message</h3>
+          <p style="font-size: 1rem; margin-bottom: 1.8rem;">Use the form below to reach the editorial team. For story pitches, please include a brief summary and relevant links.</p>
+          <form id="contactForm" onsubmit="event.preventDefault(); alert('Thank you. Your message has been sent to the Grainline editorial team. We will respond within 2–3 business days.'); this.reset();">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full name</label>
+                <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="general">General inquiry</option>
+                <option value="editorial">Editorial / story pitch</option>
+                <option value="feedback">Feedback on an article</option>
+                <option value="press">Press / media request</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Write your message here…" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send message</button>
+          </form>
+          <p style="font-size: 0.85rem; color: var(--muted); margin-top: 1.5rem; font-family: var(--font-sans);">By submitting this form, you agree to our <a href="privacy.html">Privacy Policy</a>. We never share your contact details.</p>
+        </div>
+
+        <!-- FREQUENTLY ASKED (contact-related) -->
+        <section style="margin: 3rem 0 1rem;">
+          <h2 style="font-size: 1.8rem;">Before you write</h2>
+          <div class="faq-item" style="border-bottom: 1px solid var(--border-light);">
+            <div class="faq-question" style="cursor: default;">Do you accept sponsored posts or guest articles?</div>
+            <div class="faq-answer show" style="max-height: none; padding-top: 0.5rem; padding-bottom: 0.5rem;">No. Grainline is reader-supported and does not publish sponsored content or paid guest posts. We occasionally accept unsolicited pitches from design professionals, but editorial is independent.</div>
+          </div>
+          <div class="faq-item" style="border-bottom: 1px solid var(--border-light);">
+            <div class="faq-question" style="cursor: default;">How can I submit a correction or update?</div>
+            <div class="faq-answer show" style="max-height: none; padding-top: 0.5rem; padding-bottom: 0.5rem;">Please email <a href="mailto:editor@grainline.house">editor@grainline.house</a> with the article title and the correction details. We review all requests and update articles as needed.</div>
+          </div>
+          <div class="faq-item" style="border-bottom: 1px solid var(--border-light);">
+            <div class="faq-question" style="cursor: default;">I’d like to republish a Grainline article. What are the terms?</div>
+            <div class="faq-answer show" style="max-height: none; padding-top: 0.5rem; padding-bottom: 0.5rem;">We welcome inquiries about syndication. Please contact us with the article title, your publication, and intended use. We typically allow excerpts with attribution and a link back to the original.</div>
+          </div>
+        </section>
+
+        <!-- NEWSLETTER (consistent with index) -->
+        <div class="newsletter">
+          <h3>Grainline Notes</h3>
+          <p>A weekly letter with our latest essays, design discoveries, and practical guides. No spam, ever.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Grainline Notes.');">
+            <input type="email" placeholder="Your email address" aria-label="Email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </main>
+
+      <!-- SIDEBAR (same as index, adapted for contact page) -->
+      <aside class="sidebar" aria-label="Sidebar with useful content">
+        <!-- search widget -->
+        <div class="sidebar-widget">
+          <h4>Search</h4>
+          <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search articles…" aria-label="Search articles">
+            <button id="searchBtn" aria-label="Submit search">Go</button>
+          </div>
+        </div>
+
+        <!-- popular articles -->
+        <div class="sidebar-widget">
+          <h4>Popular This Month</h4>
+          <ul>
+            <li><a href="#">The 7 Most Common Kitchen Layout Mistakes</a></li>
+            <li><a href="#">How to Choose a White Paint (It’s Harder Than You Think)</a></li>
+            <li><a href="#">Small Bathroom, Big Ideas: 12 Space-Saving Tricks</a></li>
+            <li><a href="#">A Beginner’s Guide to Architectural Styles</a></li>
+            <li><a href="#">Why Your Living Room Needs Three Types of Light</a></li>
+          </ul>
+        </div>
+
+        <!-- latest articles -->
+        <div class="sidebar-widget">
+          <h4>Latest</h4>
+          <ul>
+            <li><a href="#">The Quiet Radicalism of Courtyard Houses</a></li>
+            <li><a href="#">Lime Plaster: The Breathing Wall</a></li>
+            <li><a href="#">Beyond the Pendant: Lighting Layers</a></li>
+            <li><a href="#">Living Large in 40 Square Meters</a></li>
+          </ul>
+        </div>
+
+        <!-- editor note -->
+        <div class="sidebar-widget">
+          <h4>From the Editor</h4>
+          <p style="font-size: 0.9rem; line-height: 1.5;">“We believe good design is not about trends—it’s about how a space makes you feel. Our goal is to give you the tools to think critically about your own environment.” — Elias Ward, Editor-in-Chief</p>
+        </div>
+
+        <!-- related categories -->
+        <div class="sidebar-widget">
+          <h4>Explore Topics</h4>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Space Planning</a></li>
+            <li><a href="#">Furniture</a></li>
+            <li><a href="#">Modern Homes</a></li>
+            <li><a href="#">Renovation</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <!-- FOOTER (consistent) -->
+    <footer class="site-footer">
+      <div>© 2025 Grainline · House Notes. Independent editorial.</div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="cookies.html">Cookies</a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- JAVASCRIPT: minimal for contact page (search + faq toggle if needed) -->
+  <script>
+    (function() {
+      // FAQ toggle (in case any interactive FAQ is present)
+      const faqQuestions = document.querySelectorAll('.faq-question');
+      faqQuestions.forEach(q => {
+        // For contact page, we made some answers visible by default. We'll keep the toggle optional.
+        // Only add event if the question isn't set to cursor default (non-interactive)
+        if (q.style.cursor !== 'default') {
+          q.addEventListener('click', function() {
+            this.classList.toggle('active');
+            const answer = this.nextElementSibling;
+            if (answer) {
+              answer.classList.toggle('show');
+            }
+          });
+        }
+      });
+
+      // Search functionality (mirrors index, but we only search within sidebar? no articles on this page)
+      // We'll make search redirect to index page with a query parameter – simple but functional.
+      const searchInput = document.getElementById('searchInput');
+      const searchBtn = document.getElementById('searchBtn');
+
+      function redirectToSearch() {
+        const query = searchInput.value.trim();
+        if (query !== '') {
+          window.location.href = 'index.html?search=' + encodeURIComponent(query);
+        } else {
+          window.location.href = 'index.html';
+        }
+      }
+
+      if (searchBtn) {
+        searchBtn.addEventListener('click', redirectToSearch);
+      }
+      if (searchInput) {
+        searchInput.addEventListener('keyup', function(e) {
+          if (e.key === 'Enter') {
+            redirectToSearch();
+          }
+        });
+      }
+
+      // Note: The contact page does not have article cards, so filtering is not needed.
+    })();
+  </script>
+</body>
+</html>
